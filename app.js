@@ -5,7 +5,7 @@ const Book = require('./model/Books.js')
 
 
 const app = express()
-const port = 3003
+const port = process.env.PORT || 3003
 app.use(express.json())
 app.get('/',(req,res)=>{
     res.send('Hello World')
